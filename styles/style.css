@@ -91,7 +91,7 @@ body {
     color: var(--info-description-text-color);
     font-size: 36px;
     font-weight: 900;
-    padding-top: 50px;
+    padding-top: 75px;
 }
 
 .info-media-container {
@@ -108,6 +108,8 @@ body {
 
 .image-hero-friend {
     display: block;
+    border: 2px solid var(--call-to-action-color);
+    border-radius: 10px;
 }
 
 .text-hero-friend {
