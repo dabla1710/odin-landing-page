@@ -10,6 +10,12 @@
     margin: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 .hero-banner {
     display: flex;
     flex-direction: column;
@@ -45,7 +51,6 @@
     align-items: flex-start;
     padding: 75px;
     gap: 20px;
-    height: 20vh;
 }
 
 .hero-image {
