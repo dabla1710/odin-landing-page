@@ -3,6 +3,9 @@
     --hero-main-text-color: #F9FAF8;
     --hero-secondary-text-color: #E5E7EB;
     --call-to-action-color: #3882F6;
+    --info-description-text-color: #1F2937;
+    --quote-section-bg-color: #E5E7EB;
+    --quote-section-text-color: #1F2937;
 }
 
 * {
@@ -13,8 +16,10 @@
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 }
+
+/* header */
 
 .hero-banner {
     display: flex;
@@ -56,13 +61,11 @@ body {
 .hero-image {
     display: block;
     max-width: 50%;
-    max-height: 100%;
+    max-height: 256px;
 }
 
 .hero-card-content {
-    flex: 1;
     max-width: 50%;
-    max-height: 100%;
 }
 
 .hero-title {
@@ -77,11 +80,91 @@ body {
     margin: 9px 0;
 }
 
-.sign-up-button {
+/* info container */
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-description {
+    color: var(--info-description-text-color);
+    font-size: 36px;
+    font-weight: 900;
+    padding-top: 50px;
+}
+
+.info-media-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 75px;
+    gap: 20px;
+}
+
+.media-hero-friend {
+    max-width: 256px;
+}
+
+.image-hero-friend {
     display: block;
-    width: 100px;
+}
+
+.text-hero-friend {
+    text-align: center;
+    padding: 8px;
+}
+
+/* quote section */
+
+.quote-section-container {
+    display: flex;
+    flex-direction: column;
+    padding: 75px 150px;
+    background-color: var(--quote-section-bg-color);
+    color: var(--quote-section-text-color);
+}
+
+.text-quote {
+    font-size: 36px;
+    font-style: italic;
+}
+
+.text-quote-author {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Call to action */
+
+.call-to-action-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    background-color: var(--call-to-action-color);
+    margin: 75px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cta-text-main {
+    color: var(--hero-main-text-color);
+    font-size: 24px;
+}
+
+.cta-text-sub {
+    color: var(--hero-secondary-text-color);
+    font-size: 18px;
+}
+
+.cta-button {
+    display: block;
     background-color: var(--call-to-action-color);
     color: var(--hero-main-text-color);
-    border-radius: 8px;
-    border-color: var(--call-to-action-color);
+    font-size: 18px;
+    padding: 2px 50px;
+    border: 2px solid var(--hero-main-text-color);
+    border-radius: 10px;
+    white-space: nowrap;
 }
