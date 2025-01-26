@@ -145,6 +145,7 @@ body {
 .call-to-action-container {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     gap: 20px;
     background-color: var(--call-to-action-color);
     margin: 75px;
@@ -166,6 +167,7 @@ body {
     display: block;
     background-color: var(--call-to-action-color);
     color: var(--hero-main-text-color);
+    height: 30px;
     font-size: 18px;
     padding: 2px 50px;
     border: 2px solid var(--hero-main-text-color);
