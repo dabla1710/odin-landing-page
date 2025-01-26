@@ -45,9 +45,10 @@ body {
     color: var(--hero-main-text-color);
 }
 
-.header-right {
+.header-right a {
     font-size: 18px;
-    color: var(--hero-secondary-text-color)
+    color: var(--hero-secondary-text-color);
+    text-decoration: none;
 }
 
 .header-hero-card {
@@ -169,4 +170,8 @@ body {
     border: 2px solid var(--hero-main-text-color);
     border-radius: 10px;
     white-space: nowrap;
+}
+
+.cta-button:hover {
+    cursor: pointer;
 }
